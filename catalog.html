@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Каталог Geek</title><meta name="description" content="Каталог магазина Geek: видеоигры, комиксы, аниме-фигурки, музыка, еда, напитки и гаджеты."><meta name="color-scheme" content="dark"><meta name="theme-color" content="#09090a">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap"><link rel="stylesheet" href="css/style.css">
+</head><body data-page="catalog">
+<header class="hdr"><div class="wrap">
+<a class="logo" href="index.html" aria-label="Geek, на главную"><span class="logo-mark" aria-hidden="true">G</span>GEEK</a>
+<nav class="nav" id="nav" aria-label="Основное меню"><a class="nl" href="index.html">Главная</a><a class="nl" href="catalog.html" aria-current="page">Каталог</a><a class="nl" href="about.html">О нас</a><a class="nl" href="register.html">Регистрация</a></nav>
+<div class="tools">
+<div class="xp" role="status" aria-label="Ваш уровень"><b><span>LVL 1</span><span>0 XP</span></b><i></i></div>
+<button class="cart-btn" type="button" aria-label="Открыть корзину"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg><span class="n">0</span></button>
+<a class="btn btn-gold btn-sm hide-sm" href="register.html">Вступить в клуб</a>
+<button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+</div></div></header>
+<main>
+<div class="wrap page-head"><span class="eyebrow">Витрина</span><h1 id="h1">Каталог</h1><p class="lead">Фильтруйте по разделам, ищите по названию, двигайте ползунок цены. Нажмите на карточку, чтобы открыть быстрый просмотр.</p></div>
+<div class="toolbar"><div class="wrap">
+<div class="chips" id="chips" role="group" aria-label="Разделы"></div>
+<div class="filters">
+<div class="field"><label for="q">Поиск</label><input type="search" id="q" placeholder="Например, Batman, винил, рамен" autocomplete="off"></div>
+<div class="field"><label for="sort">Сортировка</label><select id="sort"><option value="pop">Сначала популярные</option><option value="asc">Цена по возрастанию</option><option value="desc">Цена по убыванию</option><option value="name">По алфавиту</option></select></div>
+<div class="rng"><label for="rng">Цена</label><input type="range" id="rng" min="0" max="13000" value="13000"><span id="rng-v" class="mono"></span></div>
+<div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap"><label class="stockl"><input type="checkbox" id="stock">Только в наличии</label><button class="btn btn-sm" id="reset" type="button">Сбросить</button></div>
+</div>
+</div></div>
+<div class="wrap sec" style="padding-top:0">
+<div class="count-line" id="count" aria-live="polite"></div>
+<div class="grid" id="grid"></div>
+<div class="none" id="none" hidden><h2>Ничего не нашли</h2><p class="lead">Попробуйте убрать фильтры или поискать по-другому.</p><button class="btn btn-gold" id="reset2" type="button">Сбросить фильтры</button></div>
+</div>
+</main>
+<footer class="ftr"><div class="wrap">
+<div class="cols">
+<div><a class="logo" href="index.html" aria-label="Geek, на главную"><span class="logo-mark" aria-hidden="true">G</span>GEEK</a><p class="lead" style="margin-top:18px;font-size:.95rem">Лавка редкостей для тех, кто знает разницу между изданием Essentials и Platinum.</p></div>
+<div><h4>Разделы</h4><ul><li><a class="link" href="index.html">Главная</a></li><li><a class="link" href="catalog.html">Каталог</a></li><li><a class="link" href="about.html">О нас</a></li><li><a class="link" href="register.html">Клуб Geek</a></li></ul></div>
+<div><h4>Каталог</h4><ul><li><a class="link" href="catalog.html#games">Видеоигры</a></li><li><a class="link" href="catalog.html#comics">Комиксы и манга</a></li><li><a class="link" href="catalog.html#figures">Аниме-фигурки</a></li><li><a class="link" href="catalog.html#music">Музыка</a></li><li><a class="link" href="catalog.html#food">Еда и напитки</a></li></ul></div>
+<div><h4>Контакты</h4><ul><li class="mono">hello@geek.example</li><li>Екатеринбург, район Центр</li><li>Пн–Чт 11:00–21:00<br>Пт–Сб 11:00–23:00<br>Вс 12:00–20:00</li></ul></div>
+</div>
+<div class="fine"><span>© 2012–2026 Geek. Демонстрационный сайт: магазин, товары, цены и люди вымышлены.</span><span>Подсказка: Konami-код открывает секретный промокод.</span></div>
+</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.9.3/confetti.browser.min.js"></script>
+<script src="js/art.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/catalog.js"></script>
+</body></html>

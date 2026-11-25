@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#09090a"><title>Geek</title>
+
+<meta name="description" content="Geek: комиксы, аниме-фигурки, винил, видеоигры, рамен и газировка. Магазин для гиков в Екатеринбурге.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap"><link rel="stylesheet" href="css/style.css">
+</head><body data-page="home">
+<header class="hdr"><div class="wrap">
+<a class="logo" href="index.html" aria-label="Geek, на главную"><span class="logo-mark" aria-hidden="true">G</span>GEEK</a>
+<nav class="nav" id="nav" aria-label="Основное меню"><a class="nl" href="index.html" aria-current="page">Главная</a><a class="nl" href="catalog.html">Каталог</a><a class="nl" href="about.html">О нас</a><a class="nl" href="register.html">Регистрация</a></nav>
+<div class="tools">
+<div class="xp" role="status" aria-label="Ваш уровень"><b><span>LVL 1</span><span>0 XP</span></b><i></i></div>
+<button class="cart-btn" type="button" aria-label="Открыть корзину"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg><span class="n">0</span></button>
+<a class="btn btn-gold btn-sm hide-sm" href="register.html">Вступить в клуб</a>
+<button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+</div></div></header>
+<main>
+<section class="hero"><div class="wrap">
+<div class="hero-copy">
+<span class="eyebrow">Магазин для гиков · Екатеринбург · с 2012</span>
+<h1>Всё, <span class="gold">что вы любите</span>, в одной лавке</h1>
+<p class="lead">Комиксы, аниме-фигурки, винил, видеоигры, рамен и газировка с шариком. Приходите за редкостью, оставайтесь поговорить о ней.</p>
+<div class="hero-cta"><a class="btn btn-gold" href="catalog.html">Открыть каталог</a><a class="btn" href="register.html">Вступить в клуб</a></div>
+<div class="hero-facts"><span><b>45</b> позиций в витрине</span><span><b>12 лет</b> со своей полки</span><span><b>GEEK10</b> −10% в корзине</span></div>
+</div>
+<div class="hero-art">
+<div class="card"><img src="img/collage.jpg" alt="Коллаж: кубики Рубика, красные кеды, геймпад, ретро-телефоны и гамбургеры" width="1396" height="786"></div>
+<button class="stk a" type="button" data-k="code">Промокод GEEK10</button>
+<button class="stk b" type="button" data-k="rare">Редкость дня: NieR</button>
+<button class="stk c" type="button" data-k="egg">Найди пасхалку</button>
+</div>
+</div></section>
+
+<div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<section class="sec"><div class="wrap">
+<div class="sec-head" data-rv><div><span class="eyebrow">Разделы</span><h2>Семь миров <span class="gold">под одной крышей</span></h2></div><a class="btn btn-sm" href="catalog.html">Весь каталог</a></div>
+<div class="cats" id="cats"></div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+<div class="sec-head" data-rv><div><span class="eyebrow">Полка редкостей</span><h2>Диски, за которыми приходят из других городов</h2><p class="lead">Нажимайте на золотые точки: цена, состояние и кнопка «в корзину» открываются прямо на полке.</p></div></div>
+<div class="shelf" id="shelf" data-rv><img src="img/shelf.jpg" alt="Полка с дисками для PlayStation 3: три ряда по шесть игр" width="1086" height="636"><div class="tip" id="tip" role="dialog" aria-label="Карточка диска"></div></div>
+<p class="shelf-note">Восемнадцать дисков PS3, каждый проверен на консоли. Коробки и руководства на месте.</p>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+<div class="sec-head" data-rv><div><span class="eyebrow">Горячее сейчас</span><h2>То, что уходит <span class="gold">за выходные</span></h2></div><a class="btn btn-sm" href="catalog.html">Смотреть всё</a></div>
+<div class="grid" id="feat"></div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+<div class="stats" data-rv>
+<div class="stat"><b data-count="12" data-suf=" лет">12 лет</b><span>с одной полки до четырёх залов</span></div>
+<div class="stat"><b data-count="9800">9 800</b><span>позиций в базе магазина</span></div>
+<div class="stat"><b data-count="37000">37 000</b><span>гиков уже у нас покупали</span></div>
+<div class="stat"><b data-count="4">4</b><span>тематических зала в центре города</span></div>
+</div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap cube-sec">
+<div style="display:grid;gap:22px;align-content:center" data-rv><span class="eyebrow">Игровая зона</span><h2>Покрутите куб. <span class="gold">Выберите мир.</span></h2><p class="lead">Тяните куб мышью или пальцем, а клик по грани откроет раздел каталога. За вращение даём XP, как и за любое другое любопытство.</p><div><a class="btn btn-gold" href="catalog.html">Или сразу в каталог</a></div></div>
+<div data-rv><div class="scene" id="scene" aria-label="Интерактивный куб с разделами каталога"><div class="cube" id="cube"></div></div><div class="cube-out" id="cube-out" aria-live="polite">Крутите куб</div></div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+<div class="cta" data-rv><span class="eyebrow">Клуб Geek</span><h2>Копите XP, открывайте <span class="gold">промокоды</span></h2><p class="lead">Регистрация даёт карту клуба, код REG15 на −15% и ранний доступ к лимитированным изданиям. Без спама: мы пишем только про редкости.</p><div class="hero-cta"><a class="btn btn-gold" href="register.html">Получить карту</a><a class="btn" href="about.html">История магазина</a></div></div>
+</div></section>
+</main>
+<footer class="ftr"><div class="wrap">
+<div class="cols">
+<div><a class="logo" href="index.html" aria-label="Geek, на главную"><span class="logo-mark" aria-hidden="true">G</span>GEEK</a><p class="lead" style="margin-top:18px;font-size:.95rem">Лавка редкостей для тех, кто знает разницу между изданием Essentials и Platinum.</p></div>
+<div><h4>Разделы</h4><ul><li><a class="link" href="index.html">Главная</a></li><li><a class="link" href="catalog.html">Каталог</a></li><li><a class="link" href="about.html">О нас</a></li><li><a class="link" href="register.html">Клуб Geek</a></li></ul></div>
+<div><h4>Каталог</h4><ul><li><a class="link" href="catalog.html#games">Видеоигры</a></li><li><a class="link" href="catalog.html#comics">Комиксы и манга</a></li><li><a class="link" href="catalog.html#figures">Аниме-фигурки</a></li><li><a class="link" href="catalog.html#music">Музыка</a></li><li><a class="link" href="catalog.html#food">Еда и напитки</a></li></ul></div>
+<div><h4>Контакты</h4><ul><li class="mono">hello@geek.example</li><li>Екатеринбург, район Центр</li><li>Пн–Чт 11:00–21:00<br>Пт–Сб 11:00–23:00<br>Вс 12:00–20:00</li></ul></div>
+</div>
+<div class="fine"><span>© 2012–2026 Geek. Демонстрационный сайт: магазин, товары, цены и люди вымышлены.</span><span>Подсказка: Konami-код открывает секретный промокод.</span></div>
+</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.9.3/confetti.browser.min.js"></script>
+<script src="js/art.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/home.js"></script>
+</body></html>
